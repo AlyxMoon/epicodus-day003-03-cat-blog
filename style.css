@@ -9,3 +9,80 @@ h1 {
 
   font-size: 3rem;
 }
+
+.table {
+  width: 300px;
+  height: 30px;
+
+  background-color: brown;
+  position: relative;
+
+  margin: 80px 20px 200px;
+}
+
+.table-leg-1,
+.table-leg-2 {
+  position: absolute;
+
+  height: 80px;
+  width: 30px;
+
+  background-color: brown;
+}
+
+.table-leg-1 {  
+  top: 30px;
+  left: 0;
+}
+
+.table-leg-2 {  
+  top: 30px;
+  right: 0;
+}
+
+.thing-on-table {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  right: 40px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: black;
+
+  animation: fall 3s ease-out infinite;
+}
+
+@keyframes fall {
+  0% {
+  }
+
+  70% {
+    top: -20px;
+    right: 0;
+
+    transform: rotate(0deg);
+  }
+
+  70% {
+    top: -20px;
+    right: 0;
+
+    transform: rotate(0deg);
+  }
+
+  80% {
+    top: -10px;
+    right: -30px;
+
+    transform: rotate(90deg);
+  }
+
+  100% {
+    top: 70px;
+    right: -60px;
+
+    transform: rotate(180deg);
+  }
+}
