@@ -1,0 +1,13 @@
+body.dark {
+  background-color: #222;
+  color: #DDD;
+}
+
+body.dark .toggle-theme {
+  background-color: rgb(42, 29, 161);
+  color: white;
+}
+
+body.dark .thing-on-table {
+  background-color: rgb(19, 184, 184);
+}
